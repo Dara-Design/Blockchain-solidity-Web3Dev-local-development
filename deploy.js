@@ -14,6 +14,7 @@ in order to deppoy our contract we gonna need tha abi and bin -binary compiled c
 //this is ganash server adress(blockchain node) -rpc url :  https://127.0.0.1:7545
 
 const provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:7545")//obezbedjujemo url chain-a,kacimo se na blockchain
+const wallet = new ethers.Wallet("0xa8c045da55b3f6710961a3ecdf2b6933c19eefe06166571a6dc7b7ec9f52f0dc",provider);
 //wallet requires two parameters - private key and provider *this is  a ganesh private key; NIKADA NE OBJAVLJUJ SVOJ PRAVI PRIVATNI KLJUC NA GITHUB-U
 
 //3.we gonna need abi and bin
